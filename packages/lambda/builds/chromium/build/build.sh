@@ -31,7 +31,9 @@ yum install -y \
   libX11-devel libxkbcommon-x11-devel libXScrnSaver-devel libXtst-devel mercurial \
   mod_ssl ncurses-compat-libs nspr-devel nss-devel pam-devel pango-devel \
   pciutils-devel php php-cli pkgconfig pulseaudio-libs-devel python python3 \
-  tar zlib zlib-devel
+  tar zlib zlib-devel procps
+
+amazon-linux-extras install python3.8 -y && rm /usr/bin/python3 && ln -s /usr/bin/python3.8 /usr/bin/python3
 
 mkdir -p build/chromium
 
